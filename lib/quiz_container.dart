@@ -24,11 +24,12 @@ class _QuizContainerState extends State<QuizContainer> {
                   width: 200,),
                 SizedBox(height: 20,),
                 Text('Quiz', style: TextStyle(color: Colors.white, fontSize: 28),),
-                OutlinedButton(onPressed: (){}, 
+                OutlinedButton.icon(onPressed: (){}, 
                             style: OutlinedButton.styleFrom(foregroundColor: Colors.white,
                                     textStyle: TextStyle(fontSize: 28)
                             ),
-                            child: Text('Start'))
+                            icon: Icon(Icons.assistant_photo_outlined),
+                            label: Text('Start'))
             ],
             );
   }

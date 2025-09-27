@@ -2,21 +2,13 @@ import 'package:flutter/material.dart';
 import 'dart:math';
 
 var rondomizer = Random();
+class QuizContainer extends StatelessWidget {
+  QuizContainer(this.startQuiz ,{super.key});
+final void Function() startQuiz;
 
-class QuizContainer extends StatefulWidget {
-  QuizContainer({super.key});
-  
-  @override 
-  State<QuizContainer> createState(){
-    return _QuizContainerState();
-  }
-}
-
-class _QuizContainerState extends State<QuizContainer> {
-  int currentDiceRoll = 1;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(context) {
     return Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -25,7 +17,7 @@ class _QuizContainerState extends State<QuizContainer> {
                   color: const Color.fromARGB(153, 255, 255, 255),),
                 SizedBox(height: 20,),
                 Text('Quiz', style: TextStyle(color: Colors.white, fontSize: 28),),
-                OutlinedButton.icon(onPressed: (){}, 
+                OutlinedButton.icon(onPressed: startQuiz, 
                             style: OutlinedButton.styleFrom(foregroundColor: Colors.white,
                                     textStyle: TextStyle(fontSize: 28)
                             ),

@@ -17,7 +17,7 @@ class _QuestionsState extends State<Questions>
    return MaterialApp(
 
       home: Scaffold(
-        body: GradientContainer( Color.fromARGB(255, 0, 229, 255), const Color.fromARGB(255, 204, 0, 255))
+        body: GradientContainer()
       )
     );
   }

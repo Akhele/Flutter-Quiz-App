@@ -9,7 +9,26 @@ class GradientContainer extends StatelessWidget {
 
 @override
   Widget build(context) {
-          return Column();
+          return MaterialApp(
+
+      home: Scaffold(
+        body: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [const Color.fromARGB(255, 204, 242, 15),const Color.fromARGB(255, 255, 0, 0)],
+              begin: startAlighnment,
+              end: endAlignment,
+            ),
+          ),
+          child: Center(
+            child: 
+            Column(),
+                  
+          ) 
+        )
+      )
+    );
+    
   }
 
 }

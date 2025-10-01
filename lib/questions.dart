@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_quiz_app/gradient_container.dart';
 
 class Questions extends StatefulWidget {
-  Questions({super.key});
+  const Questions({super.key});
 
 @override
   State<Questions> createState() {
@@ -14,11 +13,17 @@ class _QuestionsState extends State<Questions>
 {
   @override
   Widget build(context) {
-   return MaterialApp(
-
-      home: Scaffold(
-        body: GradientContainer()
-      )
-    );
+   return Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text("Question Text..."),
+                SizedBox(height: 30,),
+                ElevatedButton(onPressed: (){}, child: Text('test1')),
+                ElevatedButton(onPressed: (){}, child: Text('test1')),
+                ElevatedButton(onPressed: (){}, child: Text('test1'), ),
+                ElevatedButton(onPressed: (){}, child: Text('test1')),
+              ],
+            );
+              
   }
 }

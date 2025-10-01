@@ -16,15 +16,11 @@ State<Quiz> createState(){
 
 class _QuizState extends State<Quiz>
 {
-  Widget? activeScreen ;
-  @override
-  void initState() {
-    activeScreen = QuizContainer(SwitchScreen);
-    super.initState();
-  }
+  var activeScreen = 'start_screen' ;
+
   void SwitchScreen(){
     setState(() {
-      activeScreen = Questions();
+      activeScreen = 'questions_screen';
     });
   }
 @override
@@ -35,14 +31,14 @@ class _QuizState extends State<Quiz>
         body: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.black,const Color.fromARGB(255, 255, 0, 0)],
+              colors: [const Color.fromARGB(255, 253, 245, 2),const Color.fromARGB(255, 255, 0, 0)],
               begin: startAlighnment,
               end: endAlignment,
             ),
           ),
           child: Center(
             child: 
-            activeScreen,
+            activeScreen == 'start_screen' ? QuizContainer(SwitchScreen) : Questions(),
                   
           ) 
         )

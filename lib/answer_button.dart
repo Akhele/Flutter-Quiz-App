@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AnswerButton extends StatelessWidget {
-  const AnswerButton(this.buttoonText,this.onTap,{super.key});
-final String buttoonText;
+  const AnswerButton(this.buttonText,this.onTap,{super.key});
+final String buttonText;
 final void Function() onTap;
 
   @override
@@ -22,7 +22,7 @@ final void Function() onTap;
                                     ),
                                     padding: EdgeInsets.symmetric(vertical: 10,horizontal: 30)
                                       ),
-                            child: Text(buttoonText)),
+                            child: Text(buttonText)),
 
                             SizedBox(height: 10,)
               ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quiz_app/gradient_container.dart';
-import 'package:flutter_quiz_app/questions.dart';
+import 'package:flutter_quiz_app/questions_screen.dart';
 import 'package:flutter_quiz_app/quiz_container.dart';
 
 

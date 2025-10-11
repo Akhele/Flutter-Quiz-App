@@ -22,7 +22,7 @@ final void Function() onTap;
                                     ),
                                     padding: EdgeInsets.symmetric(vertical: 10,horizontal: 30)
                                       ),
-                            child: Text(buttonText)),
+                            child: Text(buttonText,textAlign: TextAlign.center,)),
 
                             SizedBox(height: 10,)
               ],
